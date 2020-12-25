@@ -1,0 +1,92 @@
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+
+public class Score {
+	int score[] = new int[5];
+	int count = 0;
+	public void menu() {
+		int me = 0 ;
+		int number  = 0;
+		
+		// loop start menu
+		do {
+			String text = "Main menu"
+					+ "( " +count+ " )" +"\n"
+					+ "1. Set new score\n"
+					+ "2. Show Average score\n"
+					+ "3. Show Minimum score\n"
+					+ "4. Show Maximum score\n"
+					+ "5. Show num"+"( "+number+" )"+"\n"
+					+ "6. Exit";
+			me = Integer.parseInt(JOptionPane.showInputDialog(text));
+			if(me == 1) {
+				count ++;
+				setNewScore();
+			}else if (me == 2) {
+				showAverage();
+			}else if (me == 3) {
+				showMinimum();
+			}else if (me == 4) {
+				showMaximum();
+			}else if (me == 5) {
+				number = num();
+		}
+		}while(me != 6);
+		
+	}
+	public int num(){
+		int i = 0 ;
+		String text = "Enter Number : ";
+		i = Integer.parseInt(JOptionPane.showInputDialog(text));
+		return(i);
+	}
+	public void setNewScore() {
+		JTextArea t = new JTextArea(10,10);
+		
+		
+		String text = "";
+		
+		for(int i = 0 ; i < 5 ; i++) {
+			score[i] = 1+(int)(Math.random()*100);
+			text += score[i] + "\n";
+		}
+		
+		t.setText(text);
+		JOptionPane.showMessageDialog(null, t , "Student score" , JOptionPane.PLAIN_MESSAGE);
+	}
+	
+	public void showAverage() {
+		double total = 0 ;
+		for(int i = 0 ; i < 5 ; i++) {
+			total += score[i];
+		}
+		JOptionPane.showMessageDialog(null, "Average score = " + (total/5) , "showAverage" , JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+	public void showMinimum() {
+		int min = 1000;
+		for(int i = 0 ; i < 5 ; i++) {
+			if (score[i] < min) {
+				min = score[i];
+			}
+		}
+		JOptionPane.showMessageDialog(null, "Minimum score = " + min , "show minimum score" , JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+	public void showMaximum() {
+		int max = 0 ;
+		for(int i = 0 ; i < 5 ; i++) {
+			if(score[i] > max) {
+				max = score[i];
+			}
+		}
+		JOptionPane.showMessageDialog(null, "Maximum score = " + max , "show Maximum score" , JOptionPane.INFORMATION_MESSAGE);
+	}
+	// ========== main ============
+	public static void main(String[] args) {
+		// created object value 
+		Score s = new Score();
+		s.menu();
+	}
+
+}

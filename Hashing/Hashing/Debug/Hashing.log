@@ -1,0 +1,54 @@
+﻿Build started 3/25/2019 11:17:29 PM.
+     1>Project "E:\c++\project\Hashing\Hashing\Hashing.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Hashing.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Hashing.cpp
+         Hashing.cpp
+     1>e:\c++\project\hashing\hashing\hashing.cpp(88): warning C4018: '<' : signed/unsigned mismatch
+                 e:\c++\project\hashing\hashing\hashing.cpp(87) : while compiling class template member function 'void HashTable<HashedObj>::print(void)'
+                 with
+                 [
+                     HashedObj=int
+                 ]
+                 e:\c++\project\hashing\hashing\hashing.cpp(95) : see reference to class template instantiation 'HashTable<HashedObj>' being compiled
+                 with
+                 [
+                     HashedObj=int
+                 ]
+     1>e:\c++\project\hashing\hashing\hashing.cpp(16): warning C4018: '<' : signed/unsigned mismatch
+                 e:\c++\project\hashing\hashing\hashing.cpp(14) : while compiling class template member function 'void HashTable<HashedObj>::makeEmpty(void)'
+                 with
+                 [
+                     HashedObj=int
+                 ]
+                 e:\c++\project\hashing\hashing\hashing.cpp(8) : while compiling class template member function 'HashTable<HashedObj>::HashTable(const HashedObj &,int)'
+                 with
+                 [
+                     HashedObj=int
+                 ]
+     1>e:\c++\project\hashing\hashing\hashing.cpp(51): warning C4018: '>=' : signed/unsigned mismatch
+                 e:\c++\project\hashing\hashing\hashing.cpp(41) : while compiling class template member function 'int HashTable<HashedObj>::findPos(const HashedObj &) const'
+                 with
+                 [
+                     HashedObj=int
+                 ]
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\c++\project\Hashing\Debug\Hashing.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Hashing.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\c++\project\Hashing\Debug\Hashing.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\c++\project\Hashing\Debug\Hashing.lib" /MACHINE:X86 Debug\Hashing.exe.embed.manifest.res
+         Debug\Hashing.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Hashing.exe.embed.manifest" /manifest Debug\Hashing.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         Hashing.vcxproj -> E:\c++\project\Hashing\Debug\Hashing.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\Hashing.unsuccessfulbuild".
+         Touching "Debug\Hashing.lastbuildstate".
+     1>Done Building Project "E:\c++\project\Hashing\Hashing\Hashing.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.36

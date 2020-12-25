@@ -1,0 +1,14 @@
+﻿Build started 1/12/2019 11:57:21 AM.
+     1>Project "E:\c++\project\test_link\test_link\test_link.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\test_link.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt link.cpp
+         link.cpp
+     1>e:\c++\project\test_link\test_link\link.cpp(1): error C3872: '0xa0': this character is not allowed in an identifier
+     1>e:\c++\project\test_link\test_link\link.cpp(1): fatal error C1021: invalid preprocessor command 'include '
+     1>Done Building Project "E:\c++\project\test_link\test_link\test_link.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.46
